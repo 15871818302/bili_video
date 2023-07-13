@@ -1,0 +1,25 @@
+.login-page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.login-part {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,30%);
+    width: 50vw;
+    height: 30vw;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
+}
+
+.login-title {
+    height: 3vw;
+    width: 100%;
+    line-height: 3vw;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+}
