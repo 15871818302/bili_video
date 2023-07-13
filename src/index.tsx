@@ -3,13 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import '../src/style/global.css'
+import {ConfigProvider} from "antd";
+import zhCN from "antd/es/locale/zh_CN"
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+const antdConfig = {
+    locale: zhCN
+}
 root.render(
   <React.StrictMode>
-    <App />
+      <ConfigProvider {...antdConfig}>
+          <App />
+      </ConfigProvider>
   </React.StrictMode>
 );
 
